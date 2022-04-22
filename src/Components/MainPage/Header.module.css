@@ -1,0 +1,14 @@
+.header {
+    background: rgba(28,29,30,30%);
+    text-align: center;
+}
+
+.title {
+    font : 5em "Freestyle Script";
+    margin : 1em 0 0 0
+}
+
+.content {
+    font : 2em "Futura Bk BT";
+    margin : 0 2em 2em 2em
+}

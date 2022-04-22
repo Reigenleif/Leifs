@@ -1,0 +1,15 @@
+.form-label-input {
+    width: 80%;
+    margin :3% 10% 0 10%
+}
+
+.form-label-input input {
+    width: 100%;
+    height: 2em;
+    border: none;
+}
+
+.form-label-input label {
+    text-align: left;
+    font-size: 2em;
+}

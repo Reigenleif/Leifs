@@ -1,0 +1,10 @@
+.button { 
+  height: 2em;
+  background-color: #2D4739;
+  border-radius: 30px;
+  color: #ffffff;
+}
+
+.textcontainer {
+  margin: 0.1em 0.3em 0.1em 0.3em;
+}

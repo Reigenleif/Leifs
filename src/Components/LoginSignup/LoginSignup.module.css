@@ -1,0 +1,51 @@
+.container {
+    margin: 3rem 0 3rem 0;
+    height: 50vh;
+    width: 60vw;
+    border: 3px solid #282930;
+    border-radius: 30px;
+    background: #EEFFEE;
+}
+
+.form-title {
+    font-size: 4em;
+    text-align: center;
+}
+
+.form-input {
+    width: 80%;
+    margin :3% 10% 0 10%
+}
+
+.form-control-buttons {
+    font-size: 2em;
+    margin: 1em 0 1em 0
+}
+
+.form-control-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.form-control-buttons button {
+    font-size: 0.7em;
+    margin: 0 3vw 0 3vw;
+    font-family: inherit;
+    
+}
+
+.form-notif {
+    display: hidden;
+    height: 2em;
+    color: red;
+}
+
+.form-notif.invalid {
+    display: block
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90vw;
+    }
+}

@@ -1,0 +1,23 @@
+.navbar-bar {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #09814A;
+}
+
+.navbar-textcontainer {
+    margin:0 0 0 0.5em;
+    font-size: 4em;
+    color: #DDDDDD;
+}
+
+.navbar-bar .profile-btn{
+    text-align: center;
+    font-size: 1.5em;
+    font-family: inherit;
+    margin: 0 2em 0 0;
+    height : 1.5em;
+    background: salmon;
+}

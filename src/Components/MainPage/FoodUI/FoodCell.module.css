@@ -1,0 +1,20 @@
+.img-wrapper {
+    --height: 40vh;
+
+    height: var(--height);
+    width: calc(var(--height) * 0.9);
+    margin: 0 0 1em 2em;
+    display: inline-block;
+}   
+
+.img-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px;
+    
+}
+
+.img-wrapper .name{
+    text-align: center;
+    font-size: 1.4em;
+}
