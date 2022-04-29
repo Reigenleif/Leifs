@@ -7,7 +7,7 @@ const FoodRow = (props) => {
   const rowContent = [];
 
   for (const key in foodData) {
-    rowContent.push(<FoodCell key={foodData[key].name} food={foodData[key]} />);
+    rowContent.push(<FoodCell key={key} kkey={key} food={foodData[key]} dropActive={props.dropActive} setDropActive={props.setDropActive}/>);
   }
 
   return (

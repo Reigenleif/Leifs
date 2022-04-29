@@ -5,10 +5,10 @@
 
 .row-title {
     font-size: 2.5em;
-    height: 2em;
     text-justify: center;
+    margin: 0.5em 0 0.5em 0;
 }
 .row-content {
     overflow: auto hidden;
-    height: 30vh;
+    max-height: 20em;
 }

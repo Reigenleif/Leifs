@@ -1,0 +1,39 @@
+.btn {
+  height: 2em;
+  width: 5em;
+  border: 0px;
+  border-radius: 5px;
+  font-family: inherit;
+  color: white
+}
+
+.btn.add {
+    background: #20aa20;
+    position: relative;
+    top: -15em;
+    left: 2em;
+    z-index: 100;
+}
+
+.btn.add:hover {
+  background: #20bb20;
+}
+
+.btn.add:active {
+  background: #209920;
+}
+
+.btn.ccl {
+    background: #ee2020;
+    position: relative;
+    top: -15em;
+    left: 24em
+}
+
+.btn.ccl:hover {
+    background: #ff2020;
+}
+
+.btn.ccl:active {
+    background: #cc2020;
+}

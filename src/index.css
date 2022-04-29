@@ -11,5 +11,9 @@ html {
 body {
   margin: 0;
   background-color: #BCB382;
+  
 }
 
+body #root2 {
+  z-index: 500;
+}
