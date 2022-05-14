@@ -1,0 +1,9 @@
+.container {
+    background: #eeffee;
+    height: 5em;
+    width: 40vw;
+    z-index: 150;
+    position: fixed;
+    top: calc(50vh - 2.5em);
+    left: calc(50vw - 20vw);
+}

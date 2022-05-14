@@ -5,6 +5,9 @@
     align-items: center;
     justify-content: space-between;
     background: #09814A;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .navbar-textcontainer {

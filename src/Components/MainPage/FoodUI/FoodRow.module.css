@@ -11,4 +11,6 @@
 .row-content {
     overflow: auto hidden;
     max-height: 20em;
+    display: flex;
+    align-items: center;
 }

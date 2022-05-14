@@ -71,7 +71,8 @@ const LoginForm = (props) => {
       > {`${Authctx.validation === "101"? "User Not Found" :
       Authctx.validation === "102" ? "Password doesn't match" : 
       Authctx.validation === "103" ? "Username must be letters and underscores" :
-      Authctx.validation === "104" ? "Password must be more than 8 characters": ""} `}</div>
+      Authctx.validation === "104" ? "Password must be more than 8 characters": 
+      Authctx.validation === "105" ? "Username already registered" : ""} `}</div>
     </div>
   );
 };

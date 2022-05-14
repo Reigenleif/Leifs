@@ -37,3 +37,18 @@
 .btn.ccl:active {
     background: #cc2020;
 }
+
+.btn.buy {
+  background: #20aa20;
+  z-index: 100;
+  margin: 0.5em;
+  
+}
+
+.btn.buy:hover {
+background: #20bb20;
+}
+
+.btn.buy:active {
+background: #209920;
+}

@@ -1,0 +1,53 @@
+.drop {
+    z-index: 100;
+}
+
+.drop .notif-added {
+    color : green ;
+    height: 2em;
+    visibility: hidden;
+    margin-left: 2em;
+}
+
+.drop .notif-added.activated {
+    visibility: visible;
+}
+
+.drop__content {
+    --height: calc(var(--wrapper-height) * 1);
+    --width: calc(var(--wrapper-height) * 2);
+
+    position: relative;
+    top: calc(50vh - calc(var(--height) / 2));
+    left: calc(50vw - calc(var(--width) / 2));
+    width: var(--width);
+    height: auto;
+    background: #eeffee;
+    border-radius: 30px;
+    
+}
+
+.drop__content img {
+    margin: 1em 0 0 0;
+    max-width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.drop__content .name {
+    text-align: center;
+    font-size: 1.4em;
+  }
+
+.drop__content .desc{
+    font-size: 0.9em;
+    text-align: center;
+    color: rgba(40,41,42,0.5);
+}
+
+.drop__content .price {
+    position: relative;
+    top: -11em;
+    left: 2em;
+}

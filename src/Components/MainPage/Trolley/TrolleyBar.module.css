@@ -1,10 +1,57 @@
 .trolley-bar {
     position: fixed;
-    z-index: 50;
-    top : 80vh;
+    z-index: 20;
+    top : 85vh;
     left : 25vw;
-    height: 10vh;
+    height: 5em;
     width: 50vw;
     background-color: #008000;
-    border-radius: 10px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.trolley-bar::-webkit-scrollbar-track {
+    width: 5%;
+    background: rgba(40,41,42,0,5);
+}
+
+.trolley-bar.hidden {
+    display: none;
+}
+
+.trolley-bar__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trolley-bar img {
+    height: 4em;
+    border-radius: 5px;
+}
+
+.trolley-button {
+    display: none;
+    background:#008000;
+    height: 5em;
+    width: 6em;
+    border-radius: 2em;
+    z-index: 20;
+    position: fixed;
+    top: 85vh;
+    left: calc(100vw - 8em);
+}
+
+@media (max-width: 1007px) {
+    .trolley-bar {
+        display: none;
+    }
+
+    .trolley-button {
+        display: block;
+    }
+
 }
