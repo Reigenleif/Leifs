@@ -1,5 +1,5 @@
 import react from "react";
-import images from "./FoodImages/index"
+import images from "../assets/images/FoodImages/index"
 
 const FoodContext = react.createContext({
   FoodData: [],
