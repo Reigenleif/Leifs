@@ -1,36 +1,24 @@
 import style from "./FoodCell.module.css";
-import Button2 from "../../UI/Button2";
+import FoodPopup from "./FoodPopUp";
+import { useContext } from "react";
+import PopupContext from "../../../Storage/PopupContext";
 
 const FoodCell = (props) => {
+  const triggerPopup = useContext(PopupContext).triggerPopup
   const food = props.food;
-  const activated = props.kkey === props.dropActive
+  const kkey = props.kkey
+
+  function clickHandler() {
+    triggerPopup(<FoodPopup food={food} kkey={kkey}/>)
+  }
+  
 
   return (
     <div
-      className={`${style["img-wrapper"]} ${
-        props.dropActive === props.kkey && style["activated"]
-      }`}
-      onClick={activated ? () => {} : (() => {
-        props.setDropActive(props.kkey);
-      })}
+      className={`${style["img-wrapper"]}`}
+      onClick=
+        {clickHandler}
     >
-      <div className={style["drop"]}>
-        <div className={style["drop__content"]}>
-          <img src={food.img} alt={food.name}></img>
-          <div className={style["name"]}>{food.name}</div>
-          <div className={style["desc"]}>{food.description}</div>
-          <Button2 btntype="add">Add</Button2>
-          <Button2
-            btntype="ccl"
-            onClick={() => {
-              props.setDropActive("0000");
-            }}
-          >
-            X
-          </Button2>
-          <div className={style["price"]}>$ {food.price}</div>
-        </div>
-      </div>
       <span>
         <img src={food.img} alt={food.name}></img>
         <div className={style["name"]}>{food.name}</div>

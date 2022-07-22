@@ -1,0 +1,15 @@
+.loadContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-size: 4em;
+    color: orange;
+}
+
+@media (max-width: 640px) {
+    .loadContainer {
+        font-size: 1.5em;
+    }
+}

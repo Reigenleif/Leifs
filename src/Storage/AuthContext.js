@@ -15,7 +15,7 @@ export const AuthContextProvider = (props) => {
 
   //setting authentication information
   const [authInfo, setAuthInfo] = useState({
-    isLoggedIn: true,
+    isLoggedIn: localStorage.getItem("isLoggedIn"),
     username: "",
   });
 
@@ -23,20 +23,21 @@ export const AuthContextProvider = (props) => {
   let userList = JSON.parse(localStorage.getItem("userList"));
   userList =
     userList === null
-      ? [{ username: "admin", password: "alipganteng" }]
-      : [...userList, { username: "admin", password: "alipganteng" }];
+      ? {"admin" : {password: "alipganteng"}}
+      : {...userList, "admin" : {password: "alipganteng" }}
 
   //algorithm to find username-password pair on localStorange
   const onLoginHandler = (username, password) => {
     let userIsFound = false;
     for (let i in userList) {
-      if (userList[i].username === username) {
+      if (i=== username) {
         if (userList[i].password === password) {
           localStorage.setItem("isLoggedIn", true);
           setAuthInfo((prevState) => {
             return {
               ...prevState,
               isLoggedIn: true,
+              username: username
             };
           });
         } else {
@@ -81,17 +82,23 @@ export const AuthContextProvider = (props) => {
   };
 
   const signupHandler = (username, password) => {
-    const newUserList = [
+    if (username in userList) {
+      triggerValidation("105")
+      return
+    }
+    const newUserList = {
       ...userList,
-      { username: username, password: password },
-    ];
+    };
+    newUserList[username] = {password:password}
+
     localStorage.setItem("userList",JSON.stringify(newUserList));
     onLoginHandler(username, password)
   };
 
   useEffect(() => {
     setAuthInfo({
-      isLoggedIn: localStorage.getItem("isLoggedIn"),
+      isLoggedIn: localStorage.getItem("isLoggedIn") === "true",
+      username: localStorage.getItem("username")
     });
   }, []);
 

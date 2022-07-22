@@ -1,11 +1,11 @@
 .header {
     background: rgba(28,29,30,30%);
     text-align: center;
+    width: 100vw;
 }
 
 .title {
     font : 5em "Freestyle Script";
-    margin : 1em 0 0 0
 }
 
 .content {

@@ -1,0 +1,80 @@
+.notif-added {
+    color : green ;
+    height: 2em;
+    visibility: hidden;
+    pointer-events: all;
+}
+
+.notif-added.activated {
+    visibility: visible;
+}
+
+.wrapper {
+    --height: calc(var(--wrapper-height) * 1);
+    --width: calc(var(--wrapper-height) * 1.3);
+    width: var(--width);
+    background: #eeffee;
+    border-radius: 20px;
+    
+}
+
+.content {
+    width: 80%;
+    position: relative;
+    
+    left: 50%;
+    transform: translate(-50%,0);
+    top:0;
+}
+
+.content img {
+    max-width: 100%;
+    position: relative;
+    margin-top: 2em;
+    
+    border-radius: 5px;
+}
+
+.content .name {
+    margin-top: 0.4em;
+    text-align: center;
+    font-size: 1.4em;
+  }
+
+.content .desc{
+    font-size: 0.9em;
+    text-align: center;
+    color: rgba(40,41,42,0.5);
+}
+
+.container-2 {
+    margin-top: 1em;
+    font-size: 1.2em;
+    height: 1.6em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.content .btn-add {
+    height: 100%;
+    width: 3em;
+    font-size: 1em;
+    background-color: #55bb55;
+    color:white;
+    border: none;
+    border-radius: 6px;
+}
+
+.content .btn-add:hover {
+    background-color: #008800;
+}
+
+
+.content .price {
+    display: flex;
+    align-items: center;
+    height: 2em;
+    margin-right: 1em;
+}

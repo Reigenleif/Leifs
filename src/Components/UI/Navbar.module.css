@@ -1,23 +1,150 @@
+.wrapper {
+  height: 5em;
+}
+
 .navbar-bar {
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #09814A;
+  height: 5em;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #09814a;
+  position: fixed;
+  z-index: 10;
+  top: 0;
 }
 
 .navbar-textcontainer {
-    margin:0 0 0 0.5em;
-    font-size: 4em;
-    color: #DDDDDD;
+  margin: 0 0 0 0.5em;
+  font-size: 4em;
+  color: #dddddd;
 }
 
-.navbar-bar .profile-btn{
-    text-align: center;
-    font-size: 1.5em;
-    font-family: inherit;
-    margin: 0 2em 0 0;
-    height : 1.5em;
-    background: salmon;
+.navbar-bar .btns {
+  display: flex;
+  align-items: center;
+}
+
+.btn-logout {
+  text-align: center;
+  font-size: 1.53rem;
+  font-family: inherit;
+  margin: 0 2em 0 0;
+  height: 2em;
+  width: 5em;
+  border: none;
+  background: salmon;
+}
+
+.btn-logout:hover {
+  background: #dddddd;
+  color: salmon;
+}
+
+.btn-cart {
+  height: 1.3em;
+  width: 1.3em;
+  font-size: 2.2rem;
+  margin: 0 1em 0 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #dddddd;
+}
+
+.btn-cart:hover {
+  background-color: #aaaaaa;
+}
+
+.btn-cart img {
+  height: 1em;
+  margin-top: 0.1em;
+  margin-left: -0.1em;
+}
+
+.cartBar {
+  width: 100vw;
+  height: 5em;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #eeffee;
+  transition: 0.5s ease-in;
+}
+
+.cartBar.activated {
+  top: 5em;
+}
+
+.btn-menu {
+  display: none !important;
+  height: 4em;
+  width: 4em;
+  margin-right: 2em;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-menu button {
+  height: 80%;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn-menu img {
+  margin-top: 10%;
+  height: 80%;
+  width: 80%;
+}
+
+.btns-mobile {
+  width: 100vw;
+  height: 8em;
+  display: none;
+  position: fixed;
+  top: -5em;
+  z-index: 5;
+  background-color: #eeffee;
+  transition: 0.5s ease-in;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.btns-mobile.activated {
+  top: 5em;
+}
+
+.btns-mobile button {
+  width: 70%;
+  height: 2.6em;
+  margin: 1em 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-mycart {
+  background-color: #dddddd;
+}
+
+.btn-logout2 {
+  background-color: salmon;
+}
+
+@media (max-width: 640px) {
+  .cartBar,
+  .btns {
+    display: none !important;
+  }
+
+  .btns-mobile {
+    display: flex;
+  }
+
+  .btn-menu {
+    display: flex !important;
+  }
 }

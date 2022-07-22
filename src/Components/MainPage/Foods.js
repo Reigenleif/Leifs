@@ -3,6 +3,7 @@ import { useContext } from "react"
 import FoodRow from "./FoodUI/FoodRow"
 import style from"./Foods.module.css"
 
+
 const RowNames = [
     "Devil-Angle Combo",
     "Originals",
@@ -13,6 +14,7 @@ const RowNames = [
 const Foods = props => {
     const Foodctx = useContext(FoodContext)
     const foodData = Foodctx.FoodData
+
 
 
     const Rows = RowNames.map((name,index) => {

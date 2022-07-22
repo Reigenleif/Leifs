@@ -1,0 +1,58 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    padding: 1em;
+    background-color: #eeffee;
+}
+
+.title {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.imgs {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.imgs img {
+    width: 40%;
+    height: 20%;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+.btns {
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.btns button {
+    height: 2em;
+    width: 80%;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-checkout {
+    background-color: #00eeee;
+}
+
+.btn-back {
+    background-color: salmon;
+}

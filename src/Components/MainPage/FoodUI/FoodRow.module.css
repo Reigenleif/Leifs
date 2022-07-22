@@ -1,5 +1,6 @@
 .row-wrapper {
     Margin: 0 5% 0 5%;
+    width: 100vw;
 }
 
 
@@ -11,4 +12,6 @@
 .row-content {
     overflow: auto hidden;
     max-height: 20em;
+    display: flex;
+    align-items: center;
 }

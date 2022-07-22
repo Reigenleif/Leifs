@@ -1,0 +1,54 @@
+.wrapper {
+    background: #eeffee;
+    width: 40em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+}
+
+.title {
+    font-size: 2em;
+    text-align: center;
+}
+
+.price {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.btn-yes {
+    font-size: 1.2em;
+    background-color: #44cc44;
+    color: white;
+    width: 30%;
+    margin: 3% 10%;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-yes:hover {
+    background-color: #22aa22;
+}
+
+.btn-no {
+    font-size: 1.2em;
+    background-color: #cc4444;
+    color: white;
+    width: 30%;
+    margin: 3% 10%;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-no:hover {
+    background-color: #aa2222;
+}
+
+

@@ -1,17 +1,18 @@
 import style from "./App.module.css";
 import Navbar from "./Components/UI/NavBar";
-import {AuthContextProvider} from "./Storage/AuthContext";
 import Content from "./Components/Content";
+import ContextProviders from "./Storage";
+import PopupHandler from "./Components/UI/PopupHandler";
 
 function App() {
-
   return (
-    <AuthContextProvider>
-      <div className={style.main}>
-        <Navbar/>
-        <Content/>
+    <ContextProviders>
+      <div className={`${style.main} `}>
+        <Navbar />
+        <Content />
+        <PopupHandler/>
       </div>
-    </AuthContextProvider>
+    </ContextProviders>
   );
 }
 
